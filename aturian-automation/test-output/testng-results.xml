@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-26T15:39:13 IST" name="Default suite" finished-at="2023-10-26T15:39:31 IST" duration-ms="17530">
+    <groups>
+      <group name="sign-in">
+        <method signature="SigninPageTest.loginPageTitleTest()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" name="loginPageTitleTest" class="com.aturian.testscripts.SigninPageTest"/>
+      </group> <!-- sign-in -->
+      <group name="smoke">
+        <method signature="SigninPageTest.loginPageTitleTest()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" name="loginPageTitleTest" class="com.aturian.testscripts.SigninPageTest"/>
+      </group> <!-- smoke -->
+      <group name="patient-portal">
+        <method signature="SigninPageTest.loginPageTitleTest()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" name="loginPageTitleTest" class="com.aturian.testscripts.SigninPageTest"/>
+      </group> <!-- patient-portal -->
+    </groups>
+    <test started-at="2023-10-26T15:39:13 IST" name="Default test" finished-at="2023-10-26T15:39:31 IST" duration-ms="17530">
+      <class name="com.aturian.testscripts.SigninPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" started-at="2023-10-26T15:39:13 IST" name="loadConfig" finished-at="2023-10-26T15:39:13 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" started-at="2023-10-26T15:39:13 IST" name="setup" finished-at="2023-10-26T15:39:24 IST" duration-ms="10749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" started-at="2023-10-26T15:39:24 IST" name="loginPageTitleTest" finished-at="2023-10-26T15:39:29 IST" duration-ms="5502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" started-at="2023-10-26T15:39:29 IST" name="tearDown" finished-at="2023-10-26T15:39:31 IST" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.aturian.testscripts.SigninPageTest@75437611]" started-at="2023-10-26T15:39:31 IST" name="afterSuite" finished-at="2023-10-26T15:39:31 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.aturian.testscripts.SigninPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
