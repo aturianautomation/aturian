@@ -19,9 +19,9 @@ public class ExtentManager extends Base{
 		String dateName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());//yyyyMMddhhmmss
 		
 		//htmlReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"//test-output//ExtentReport//"+"MyReport.html");
-		htmlReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"aturian+ Report"+ "_" + dateName + ".html");
-		htmlReporter.config().setDocumentTitle("MyHealthBook+");
-		htmlReporter.config().setReportName("MyHealthBook+");
+		htmlReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"Aturian test Report"+ "_" + dateName + ".html");
+		htmlReporter.config().setDocumentTitle("Aturian");
+		htmlReporter.config().setReportName("Aturian");
 		htmlReporter.config().setTheme(Theme.DARK);
 		
 		extent = new ExtentReports();
