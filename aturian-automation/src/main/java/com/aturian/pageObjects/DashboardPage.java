@@ -17,26 +17,34 @@ public class DashboardPage extends Base {
 
 	Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 
-	// Add New Supplier Button
-	@FindBy(xpath = "//a[normalize-space()='Add New Supplier']")
-	private WebElement btn_addNewSupplier;
+
+	// Supplier button from left navigation
+	@FindBy(xpath = "//h6[normalize-space()='Suppliers']")
+	private WebElement btn_supplier;
+	
+	// Manage Supplier button from left navigation
+	@FindBy(xpath = "//h6[normalize-space()='Manage Suppliers']")
+	private WebElement btn_manage_supplier;
 
 	// Constructor to invoke WebElement
 	public DashboardPage() {
 		PageFactory.initElements(driver, this);
 	}
 
+	
+	
 	// Method for Navigate to the Add new Supplier screen
-	public AddNewSupplierPage navigateToAddNewSupplierScreen() throws InterruptedException {
+		public SupplierListPage navigateToSupplierListPage() throws InterruptedException {
 
-		try {
-			wait.until(ExpectedConditions.visibilityOf(btn_addNewSupplier)).click();
-			return new AddNewSupplierPage();
-		} catch (Throwable e) {
-			e.printStackTrace();
-			test.log(Status.INFO, e);
-			return new AddNewSupplierPage();
+			try {
+				wait.until(ExpectedConditions.visibilityOf(btn_supplier)).click();
+				wait.until(ExpectedConditions.visibilityOf(btn_manage_supplier)).click();
+				return new SupplierListPage();
+			} catch (Throwable e) {
+				e.printStackTrace();
+				test.log(Status.INFO, e);
+				return new SupplierListPage();
+			}
 		}
-	}
 
 }
