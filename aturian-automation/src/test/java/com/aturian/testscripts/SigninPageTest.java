@@ -11,14 +11,14 @@ public class SigninPageTest extends Base {
 	private LoginPage loginPage;
 
 	// Method to loginPageTitleTest.
-	@Test(groups = { "patient-portal", "smoke", "sign-in" })
+	@Test(groups = { "smoke", "sign-in" })
 	public void loginPageTitleTest() throws InterruptedException {
 
 		// String expected_title = "Sign in";
 		String testName = "Verify user is successfully able to navigate to the sign-in page";
 
 		// Creating the test name to display in extent report
-		test = extent.createTest(testName).assignAuthor("Ratin Kumar").assignCategory("patient-portal", "smoke",
+		test = extent.createTest(testName).assignAuthor("Ratin Kumar").assignCategory("smoke",
 				"sign-in");
 
 		Log.startTestCase(testName);

@@ -13,30 +13,35 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.aturian.base.Base;
 import com.aventstack.extentreports.Status;
 
-public class DashboardPage extends Base {
 
-	Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-
-	// Add New Supplier Button
+public class AddNewSupplierPage extends Base {
+	
+	 Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+	 
+	// Input email field
 	@FindBy(xpath = "//a[normalize-space()='Add New Supplier']")
 	private WebElement btn_addNewSupplier;
-
+	
 	// Constructor to invoke WebElement
-	public DashboardPage() {
+	public AddNewSupplierPage() {
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	// Method for Navigate to the Add new Supplier screen
-	public AddNewSupplierPage navigateToAddNewSupplierScreen() throws InterruptedException {
+			public AddNewSupplierPage navigateToAddNewSupplierScreen() throws InterruptedException {
+				//NewExcelLibrary obj = new NewExcelLibrary();
 
-		try {
-			wait.until(ExpectedConditions.visibilityOf(btn_addNewSupplier)).click();
-			return new AddNewSupplierPage();
-		} catch (Throwable e) {
-			e.printStackTrace();
-			test.log(Status.INFO, e);
-			return new AddNewSupplierPage();
-		}
-	}
+				try {
 
+					return new AddNewSupplierPage();
+				} catch (Throwable e) {
+					e.printStackTrace();
+					test.log(Status.INFO, e);
+					return new AddNewSupplierPage();
+				}
+			}
+	
+
+	 
+	
 }
